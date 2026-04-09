@@ -39,7 +39,7 @@ Polynominal add(Polynominal a, Polynominal b)
     Polynominal p; // 다항식 결과
     p.degree = (a.degree > b.degree) ? a.degree : b.degree;
 
-    for (int i = 0; i < p.degree; i++) { // i : 계수
+    for (int i = 0; i < p.degree; i++) { // i : 차수
         p.coef[i] = ((i <= a.degree) ? a.coef[i] : 0) + ((i <= b.degree) ? b.coef[i] : 0);
     }
 
