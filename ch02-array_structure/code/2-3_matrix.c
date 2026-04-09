@@ -1,3 +1,7 @@
+/*
+의문점: 정방행렬이 아닌 경우에는 어떻게 하는가?
+
+*/
 #include <stdio.h>
 
 #define ROWS 3
