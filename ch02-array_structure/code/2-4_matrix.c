@@ -1,11 +1,16 @@
 /*
-의문점: 정방행렬이 아닌 경우에는 어떻게 하는가?
-
+코드 2.4 행렬을 2차원 배열로 표현하기
 */
+
 #include <stdio.h>
 
 #define ROWS 3
 #define COLS 3
+
+/*
+Q. 정방행렬이 아닌 경우에는 어떻게 하는가?
+A. 행렬의 크기가 바뀌기 때문에 따로 알고리즘으로 처리해줘야 함.
+*/
 
 void print_mat(int mat[ROWS][COLS], const char *label)
 {

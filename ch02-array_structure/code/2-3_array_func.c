@@ -1,3 +1,6 @@
+/*
+코드 2.3 함수의 매개변수로 배열 전달
+*/
 #include <stdio.h>
 
 void reset_variable(int a)
