@@ -44,3 +44,10 @@ Element dequeue(void)
   return data[(front+1) % MAX_SIZE];
 }
 
+Element peek(void)
+{
+  if (is_empty()) {
+    error ("Underflow Error!");
+  }
+  return data[(front+1) % MAX_SIZE];
+}
