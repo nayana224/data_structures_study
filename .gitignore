@@ -9,6 +9,19 @@
 
 .codex
 .vscode/
+**/build/
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.out
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
 
 # 예외적으로 무시하지 않을 특정 파일이 있다면 추가 (예: .gitignore 자체)
 !.gitignore
