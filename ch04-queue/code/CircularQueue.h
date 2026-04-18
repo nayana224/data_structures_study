@@ -41,7 +41,8 @@ Element dequeue(void)
   if (is_empty()) {
     error("Underflow Error!");
   }
-  return data[(front+1) % MAX_SIZE];
+  front = (front + 1) % MAX_SIZE;
+  return data[front];
 }
 
 Element peek(void)
