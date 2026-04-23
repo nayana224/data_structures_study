@@ -1,3 +1,6 @@
+/*
+코드 3.10 하노이의 탑
+*/
 #include <stdio.h>
 
 void hanoi_tower(int n, char from, char tmp, char to)

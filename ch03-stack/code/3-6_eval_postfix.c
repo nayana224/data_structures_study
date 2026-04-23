@@ -1,3 +1,6 @@
+/*
+코드 3.6 후위 표기식 계산 프로그램
+*/
 #define MAX_SIZE 100
 typedef double Element;
 #include "ArrayStack.h"
@@ -39,7 +42,7 @@ float eval_postfix(const char expr[])
       }
     }
   }
-  return pop();
+  return pop(); // 계산 후 결과값 return 
 }
 
 int main(void)

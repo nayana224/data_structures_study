@@ -19,7 +19,7 @@ typedef struct {
 } SparsePoly;
 
 
-SparsePoly add(SparsePoly a, SparsePoly b)
+SparsePoly add(SparsePoly a, SparsePoly b) // [복습] -> 어려움
 {
     SparsePoly c;
     c.nTerms = 0;
@@ -39,7 +39,7 @@ SparsePoly add(SparsePoly a, SparsePoly b)
         // 다항식 A의 항과 B의 지수가 동일한 경우
         else {
             c.term[c.nTerms] = a.term[i++]; // a항을 대입 후
-            c.term[c.nTerms].coef += b.term[j++].coef; // a, b의 계수를 더함
+            c.term[c.nTerms++].coef += b.term[j++].coef; // a, b의 계수를 더함
         }
     }
 
@@ -47,7 +47,7 @@ SparsePoly add(SparsePoly a, SparsePoly b)
 }
 
 
-float evalute(SparsePoly a, float x) 
+float evalute(SparsePoly a, float x) // [복습] -> 어려움
 {
     float result = 0;
     for (int i = 0; i < a.nTerms; i++) {
@@ -64,7 +64,7 @@ void print_spoly(SparsePoly p, const char* str)
     for (int i = 0; i < p.nTerms; i++) {
         printf("%5.1f", p.term[i].coef);
         if (p.term[i].expo > 0) {
-            printf(" x%d ", p.term[i].expo);
+            printf(" x^%d ", p.term[i].expo);
             if (i != p.nTerms - 1) printf("+ ");
         }
     }

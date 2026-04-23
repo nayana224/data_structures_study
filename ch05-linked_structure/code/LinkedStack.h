@@ -40,7 +40,7 @@ void push(Element e)
 {
     Node* p = alloc_node(e);
     p->link = top;
-    top = p;
+    top = p; // top은 새로 만들어진 p를 가리킴
 }
 
 // 삭제 연산
@@ -49,12 +49,12 @@ Element pop(void)
     if (is_empty()) {
         error("Underflow Error");
     }
-    Node* p = top;
-    top = p->link;
-    return free_node(p);
+    Node* p = top; // top 노드 복사 후
+    top = p->link; // top을 가리킴
+    return free_node(p); // p는 없앤 후 값 return
 }
 
-Element peek()
+Element peek(void)
 {
     if (is_empty()) {
         error("Overflow Error");

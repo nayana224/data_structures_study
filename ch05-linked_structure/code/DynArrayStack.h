@@ -40,6 +40,7 @@ void push(Element e)
 void error(const char str[])
 {
     printf("%s", str);
+    exit(1);
 }
 
 

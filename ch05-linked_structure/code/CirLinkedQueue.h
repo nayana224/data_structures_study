@@ -56,7 +56,7 @@ Element dequeue(void)
 
     Node* p = rear->link;
     if (rear == p) {
-        rear = NULL;
+        rear = NULL; // 변수 초기화
     } else {
         rear->link = p->link;
     }

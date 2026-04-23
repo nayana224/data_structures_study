@@ -11,7 +11,7 @@ typedef struct {
     int value;
 } Elem;
 
-void transpose_mat2(Elem mat[], int len)
+void transpose_mat2(Elem mat[], int len) // -> [복습] 잘 모름
 {
     for (int i = 0; i < len; i++) {
         int tmp = mat[i].col;

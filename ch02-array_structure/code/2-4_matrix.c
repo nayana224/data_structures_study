@@ -23,10 +23,10 @@ void print_mat(int mat[ROWS][COLS], const char *label)
     }
 }
 
-void transpose_mat(int mat[ROWS][COLS])
+void transpose_mat(int mat[ROWS][COLS]) // 매개변수 실수함
 {
     for (int i = 0; i < ROWS; i++) {
-        for (int j = i+1; j < COLS; j++) {
+        for (int j = i+1; j < COLS; j++) { // 여기 실수함 -> 이해 필요
             int tmp = mat[i][j];
             mat[i][j] = mat[j][i];
             mat[j][i] = tmp;

@@ -34,10 +34,10 @@ float evalute(Polynominal p, float x)
 }
 
 // 다항식끼리의 덧셈
-Polynominal add(Polynominal a, Polynominal b)
+Polynominal add(Polynominal a, Polynominal b) // [복습] -> 어려움
 {
     Polynominal p; // 다항식 결과
-    p.degree = (a.degree > b.degree) ? a.degree : b.degree;
+    p.degree = (a.degree > b.degree) ? a.degree : b.degree; // 최고차수 결정
 
     for (int i = 0; i < p.degree; i++) { // i : 차수
         p.coef[i] = ((i <= a.degree) ? a.coef[i] : 0) + ((i <= b.degree) ? b.coef[i] : 0);
@@ -45,6 +45,7 @@ Polynominal add(Polynominal a, Polynominal b)
 
     return p;
 }
+
 
 int main(void)
 {

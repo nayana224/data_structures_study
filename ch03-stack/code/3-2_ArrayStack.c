@@ -1,6 +1,8 @@
 /*
 코드 3.2 스택의 활용
 */
+typedef int Element;
+#define MAX_SIZE 100
 #include "ArrayStack.h"
 
 int main(void)

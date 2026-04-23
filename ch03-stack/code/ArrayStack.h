@@ -13,12 +13,12 @@ void error(const char str[])
     printf("%s", str);
 }
 
-void init_stack()
+void init_stack(void)
 {
     top = -1;
 }
 
-int is_empty()
+int is_empty(void)
 {
     if (top == -1)
         return 1; // 스택이 비어있음
@@ -28,7 +28,7 @@ int is_empty()
 
 int is_full()
 {
-    if (top == (MAX_SIZE - 1))
+    if (top == (MAX_SIZE - 1)) 
         return 1; // 현재 top이 맨 위
     else
         return 0; // 여유 있음

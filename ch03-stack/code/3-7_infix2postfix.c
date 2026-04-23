@@ -1,3 +1,6 @@
+/*
+코드 3.7 중위 식의 후위 표기식 변환 프로그램
+*/
 #define MAX_SIZE 100
 typedef char Element;
 #include "ArrayStack.h"
